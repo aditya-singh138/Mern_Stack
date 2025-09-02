@@ -1,0 +1,53 @@
+#k1{
+    height:100px;
+    width:100px;
+    background-color: brown;
+    animation-name: random;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 5;
+}
+@keyframes random {
+    from{background-color:brown} to {background-color:rgb(225, 192, 255)};
+}
+
+#k2{
+    height:100px;
+    width:100px;
+    background-color: burlywood;
+    position: absolute;
+    top:200px;
+    animation: random2 2s  linear 0s  infinite normal;
+}
+@keyframes random2{
+    /* from{background-color:burlywood;} to {background-color: blue}; */
+    from {
+        left:0px;
+        background-color: burlywood;
+    } 
+    to {
+        left:300px;
+        background-color: blue;
+    };
+}
+
+#k3{
+    height:100px;
+    width:100px;
+    position:absolute;
+    top:400px;
+    left:100px;
+    border: 10px solid yellowgreen;
+    border-radius: 50%;
+    border-top: 10px solid pink;
+    animation: hii 2s ease-in-out 0s infinite normal ;
+}
+@keyframes hii {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}

@@ -1,0 +1,45 @@
+#k1{
+    height:100px;
+    width:100px;
+    background-color: brown;
+    position:absolute;
+    left:100px;
+    transition: all 2s ease-in;
+}
+#k1:hover{
+    transform:rotate(90deg);
+}
+
+#k2{
+    height:100px;
+    width:100px;
+    background-color:blueviolet;
+    position:absolute;
+    left:300px;
+    transition: all 2s ease-in;
+}
+#k2:hover{
+    transform:scale(2,2);
+}
+
+#k3{
+    height:100px;
+    width:100px;
+    background-color: burlywood;
+    transition:all 3s ease-in;
+}
+#k3:hover{
+    transform:translate(200px,200px);
+}
+
+#k4{
+    height:100px;
+    width:100px;
+    background-color: chartreuse;
+    position:absolute;
+    left:100px;
+    transition:all 2s ease-in;
+}
+#k4:hover{
+    transform:skew(45deg);
+}
