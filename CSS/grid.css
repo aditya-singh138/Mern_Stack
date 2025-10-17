@@ -1,0 +1,119 @@
+.container{
+    height:300px;
+    width:50%;
+    background-color: beige;
+    display: grid;
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.k1{
+    /* height:100px; */
+    /* width:100%; */
+    background-color: brown;
+
+}
+
+
+
+.container2{
+    height:700px;
+    width:70%;
+    background-color: aqua;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.k2,.k3,.k4,.k5,.k6,.k7{
+    background-color: blue;
+    border: 2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: chartreuse;
+    /* margin: 10px; */
+
+}
+.k2,.k7{
+    grid-column-start:1 ;
+    grid-column-end:4;
+    background-color:crimson;
+}
+.k3{
+    grid-row-start:2 ;
+    grid-row-end: 4;
+    background-color: burlywood;
+}
+.k4{
+    grid-column-start:2 ;
+    grid-column-end: 4;
+    background-color: cadetblue;
+}
+
+.container3{
+    height:300px;
+    width:70%;
+    background-color:beige;
+    display:grid;
+    gap:10px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+}
+.a1,.a2,.a3,.a4,.a5,.a6{
+    background-color:rgb(193, 94, 94);
+    border: 2px solid black;
+}
+.a1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.a2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+.container4{
+    height:700px;
+    width:70%;
+    /* background-color: blueviolet; */
+    display:grid;
+    gap:10px;
+    grid-template-areas:
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer"
+    ;
+}
+.hello{
+    background-color: rgb(209, 128, 128);
+    border:2px solid black;
+    color: chartreuse;
+}
+
+#header{
+    grid-area: header;
+}
+#sidebar{
+    grid-area: sidebar ;
+}
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+#footer{
+    grid-area: footer;
+}

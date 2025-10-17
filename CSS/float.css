@@ -1,0 +1,15 @@
+#k1{
+    height:400px;
+    float:left;
+}
+#k2{
+    float: right;
+    height:300px;
+}
+#k3{
+    height:400px;
+    width:500px;
+    background-color: bisque;
+    border: 2px solid black;
+    overflow: scroll;
+}

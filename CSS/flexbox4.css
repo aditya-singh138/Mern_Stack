@@ -8,30 +8,58 @@ body{
     display:flex;
     flex-direction:row; 
     justify-content: flex-end;
+    align-items:center;
 }
 #k1{
     height:100px;
     width:100px;
-    background-color: rgb(62, 167, 132);
-    display:inline-block;
+    background-color:blue;
 }
 #k2{
     height:100px;
     width:100px;
     background-color:antiquewhite;
-    display:inline-block;
 }
 #k3{
     height:100px;
     width:100px;
     background-color:pink;
-    display:inline-block;
 }
 #k4{
     height:100px;
     width:100px;
     background-color:brown;
-    display:inline-block;
+}
+
+#flex2{
+    height:300px;
+    width:700px;
+    border: 2px solid black;
+    display:flex;
+    flex-direction:row-reverse; 
+    justify-content: center;
+    align-items:center;
+    background-color: brown;
+}
+#c1{
+    height:100px;
+    width:100px;
+    background-color: blanchedalmond;
+}
+#c2{
+    height:100px;
+    width:100px;
+    background-color: blue;
+}
+#c3{
+    height:100px;
+    width:100px;
+    background-color: chartreuse;
+}
+#c4{
+    height:100px;
+    width:100px;
+    background-color: chocolate;
 }
 
 #outer{
