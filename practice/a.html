@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #k1{
+            height:300px;
+            width:800px;
+            background-color: brown;
+            margin: 200px;
+            /* position: absolute;
+            top:200px;
+            left:300px; */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        #k2{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+        }
+        #k3{
+            height: 100px;
+            width:100px;
+            background-color: blueviolet;
+        }
+        #k4{
+            height: 100px;
+            width:100px;
+            background-color:chartreuse;
+        }
+        #k5{
+            height: 100px;
+            width:100px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div id="k1">
+        <div id="k2" class="box" style="background-color: aqua;">a</div>
+        <div id="k3" class="box" style="background-color: blueviolet;">b</div>
+        <div id="k4" class="box" style="background-color: chartreuse;">c</div>
+        <div id="k5" class="box" style="background-color: burlywood;">d</div>
+    </div>
+</body>
+<script>
+    let boxes= document.querySelectorAll(".box");
+    let body= document.querySelector("body");
+    boxes.forEach((box)=>{
+        box.addEventListener("click",()=>{
+            let bb= box.style.backgroundColor;
+            if(bb=="aqua"){
+                body.style.backgroundColor="aqua";
+            }
+            else if(bb=="blueviolet"){
+                body.style.backgroundColor="blueviolet";
+            }
+            else if(bb=="chartreuse"){
+                body.style.backgroundColor="chartreuse";
+            }
+            else if(bb=="burlywood"){
+                body.style.backgroundColor="burlywood";
+            }
+            else{
+                body.style.backgroundColor="black";
+            }
+            
+            // let b= box.style.backgroundColor;
+            // body.style.backgroundColor=`${b}`;
+            // body.style.backgroundColor="black";
+        })
+    })
+</script>
+</html>
