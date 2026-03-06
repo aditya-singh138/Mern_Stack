@@ -37,6 +37,6 @@
 
 
 
-let str=prompt("input do jaldi: ");
-let ans="@"+str+"13";
-console.log(ans);
+// let str=prompt("input do jaldi: ");
+// let ans="@"+str+"13";
+// console.log(ans);

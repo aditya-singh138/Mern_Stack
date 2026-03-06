@@ -11,5 +11,5 @@ if(n%5==0){
     console.log("multiple of 5");
 }
 else{
-    console.log("not0");
+    console.log("not");
 }
